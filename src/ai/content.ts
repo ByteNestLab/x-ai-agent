@@ -14,7 +14,7 @@ export const tweetGenerationSchema = z.object({
 export async function generateTweet(options: TweetGenerationOptions, provider: AIProvider): Promise<TweetResult> {
   const input = tweetGenerationSchema.parse(options);
   const content = await provider.generateTweet(input);
-  const hashtags = input.keywords?.map((keyword) => `#${keyword.replace(/\\s+/g, "")}`) ?? [];
+  const hashtags = input.keywords?.map((keyword) => `#${keyword.replace(/\s+/g, "")}`) ?? [];
   const alternatives = await Promise.all([
     provider.generateTweet({ ...input, tone: "concise" }),
     provider.generateTweet({ ...input, tone: "educational" })
