@@ -11,7 +11,7 @@ export class MockAIProvider implements AIProvider {
   readonly name = "mock";
 
   async generateTweet(options: TweetGenerationOptions): Promise<string> {
-    const keywordText = options.keywords?.length ? ` ${options.keywords.map((word) => `#${word.replace(/\\s+/g, "")}`).join(" ")}` : "";
+    const keywordText = options.keywords?.length ? ` ${options.keywords.map((word) => `#${word.replace(/\s+/g, "")}`).join(" ")}` : "";
     const prefix = options.tone === "professional" ? "A practical perspective:" : "A useful idea:";
     return `${prefix} ${options.topic} for ${options.audience}.${keywordText}`.slice(0, options.length === "short" ? 140 : options.length === "medium" ? 220 : 280);
   }
