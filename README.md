@@ -181,6 +181,11 @@ Official X API integration, more AI providers, persistent task storage, advanced
 
 Multi-agent workflows, campaign management, knowledge-base content, team collaboration, and a plugin system.
 
+### Screenshots
+<img width="1626" height="816" alt="image" src="https://github.com/user-attachments/assets/1f15a7be-73cd-4464-aca7-88701f806500" />
+<img width="1486" height="814" alt="image" src="https://github.com/user-attachments/assets/ea887f47-5658-4af9-b50b-7a643954b658" />
+
+
 ## FAQ
 
 ### What is an X AI Agent?
