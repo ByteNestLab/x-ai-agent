@@ -32,7 +32,7 @@ export class MockAIProvider implements AIProvider {
 }
 
 export class OpenAIProvider implements AIProvider {
-  readonly name = "openai";
+  readonly name: string = "openai";
   constructor(private readonly apiKey = process.env.OPENAI_API_KEY) {}
   private unavailable(): never { throw new Error("OpenAI adapter is an interface placeholder. Add an API client and configure OPENAI_API_KEY."); }
   async generateTweet(_options: TweetGenerationOptions): Promise<string> { this.unavailable(); }
