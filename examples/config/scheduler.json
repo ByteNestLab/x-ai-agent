@@ -1,0 +1,7 @@
+{
+  "content": "A reviewed post with a clear point of view.",
+  "scheduledAt": "2030-01-01T10:00:00Z",
+  "timezone": "UTC",
+  "retryPolicy": { "maxAttempts": 3, "backoffMs": 30000 },
+  "randomizationWindowMinutes": 10
+}
