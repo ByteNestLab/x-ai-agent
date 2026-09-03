@@ -227,6 +227,16 @@ Keep daily limits low, deduplicate content, use meaningful keywords, require app
 
 No. It explicitly does not bypass rate limits, CAPTCHA, anti-detection, or account restrictions.
 
+## Disclaimer
+
+Reference: https://www.tweetattackspro.com/
+
+X (formerly Twitter) has its own Terms of Service, developer policies, API requirements, automation rules, and anti-abuse systems.
+
+This project is intended for legitimate research, development, testing, and responsible use. Users are responsible for ensuring that their use of this project and any related automation complies with X's applicable policies, terms, and requirements, as well as all applicable laws and regulations.
+
+The project does not encourage spam, abusive behavior, unauthorized access, manipulation, or attempts to bypass X's security and anti-abuse systems.
+
 ## Contributing and license
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CHANGELOG.md](CHANGELOG.md). Released under the [MIT License](LICENSE).
