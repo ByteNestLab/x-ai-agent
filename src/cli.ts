@@ -26,5 +26,5 @@ else if (command === "generate" && subcommand === "tweet") {
   console.log(JSON.stringify(task, null, 2));
 } else if (command === "report") {
   const metrics = { impressions: Number(value("--impressions", "0")), likes: Number(value("--likes", "0")), replies: Number(value("--replies", "0")), reposts: Number(value("--reposts", "0")), bookmarks: Number(value("--bookmarks", "0")), followers: Number(value("--followers", "0")) };
-  console.log(JSON.stringify({ engagementRate: calculateEngagementRate(metrics), ...generateReport(metrics) }, null, 2));
+  console.log(JSON.stringify(generateReport(metrics), null, 2));
 } else { help(); process.exitCode = 1; }
