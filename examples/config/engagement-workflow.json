@@ -1,0 +1,5 @@
+{
+  "keywords": ["typescript", "ai-agent"],
+  "maxRepliesPerDay": 5,
+  "requireApproval": true
+}
