@@ -1,0 +1,40 @@
+{
+  "name": "x-ai-agent",
+  "version": "0.1.0",
+  "description": "Open-source X AI Agent and Twitter AI Agent toolkit for AI content, replies, scheduling, engagement, and analytics automation.",
+  "type": "module",
+  "bin": {
+    "x-ai-agent": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "seo": "node scripts/seo-check.mjs"
+  },
+  "keywords": [
+    "x", "twitter", "ai", "ai-agent", "twitter-automation", "x-automation", "tweet-generator", "social-media", "ai-content"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ByteNestLab/x-ai-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ByteNestLab/x-ai-agent/issues"
+  },
+  "homepage": "https://github.com/ByteNestLab/x-ai-agent#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
